@@ -27,6 +27,33 @@ class _HomeState extends State<Home> {
                 ),
                 Text( "Online Pharmacy",
                   style: AppWidget.lightTextStyle(28)
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        margin: EdgeInsets.only(right: 25,),
+                        padding: EdgeInsets.only(right: 48, left: 20),
+
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                            borderRadius: BorderRadius.circular(30),
+                            border: Border.all(color: Colors.white, width: 1.5)
+                        ),
+                        child: TextField(
+                          decoration: InputDecoration(
+                            border: InputBorder.none,
+                            hintText: "Search Medicine",
+                            hintStyle: AppWidget.lightTextStyle(16)
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(color: Colors.black),
+                      child: Icon(Icons.search, color: Colors.white),
+                    )
+                  ],
                 )
               ],
         )
